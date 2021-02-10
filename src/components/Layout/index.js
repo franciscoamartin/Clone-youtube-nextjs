@@ -1,5 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 import Head from 'next/head';
+import TopBar from './TopBar';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -40,7 +41,7 @@ function Layout({ children, title }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className={classes.root}>
-        <div>topbar</div>
+        <TopBar />
         <div>navbar</div>
         <div className={classes.wrapper}>
           <div className={classes.contentContainer}>
